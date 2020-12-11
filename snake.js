@@ -14,10 +14,6 @@ foodImg.src = "img/food.png";
 // audioak hasieratu
 let dead = new Audio();
 let eat = new Audio();
-let up = new Audio();
-let right = new Audio();
-let left = new Audio();
-let down = new Audio();
 
 dead.src = "audio/dead.mp3";
 eat.src = "audio/eat.mp3";
