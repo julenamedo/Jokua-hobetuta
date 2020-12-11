@@ -12,15 +12,11 @@ const foodImg = new Image();
 foodImg.src = "img/food.png";
 
 // audioak hasieratu
-let dead = new Audio();
+let ura = new Audio();
 let eat = new Audio();
 
-dead.src = "audio/dead.mp3";
+ura.src = "audio/ura.mp3";
 eat.src = "audio/eat.mp3";
-up.src = "audio/up.mp3";
-right.src = "audio/right.mp3";
-left.src = "audio/left.mp3";
-down.src = "audio/down.mp3";
 
 // karratua(sugea deklaratu eta hasieratu)
 let snake = [];
@@ -140,7 +136,7 @@ function draw()
         ctx.fillStyle = "black"; //Game over-en kolorea
         ctx.font = "80px Changa one"; //letra mota eta tamaina
         ctx.fillText('GAME OVER!', 1.75*box, 10.7*box); //zer ipiniko duen eta zer posiziotan
-        dead.play();
+        ura.play();
     }
     
     snake.unshift(newHead); //Array-ko hasieran balore berriak ipintzeko, hau da, newHeaden kalkulatutako kordenadak arrayko hasieran ipini.
