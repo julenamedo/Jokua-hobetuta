@@ -47,11 +47,11 @@ function direction(event)
 {
     let key = event.keyCode;
     if( key == 37 && d != "RIGHT")
-    }
+    {
         d = "LEFT";
     }
     else if(key == 38 && d != "DOWN")
-    }
+    {
         d = "UP";
     }
     else if(key == 39 && d != "LEFT")
