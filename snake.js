@@ -51,24 +51,20 @@ function direction(event)
 {
     let key = event.keyCode;
     if( key == 37 && d != "RIGHT")
-    {
-        left.play();
+    }
         d = "LEFT";
     }
     else if(key == 38 && d != "DOWN")
-    {
+    }
         d = "UP";
-        up.play();
     }
     else if(key == 39 && d != "LEFT")
     {
         d = "RIGHT";
-        right.play();
     }
     else if(key == 40 && d != "UP")
     {
         d = "DOWN";
-        down.play();
     }
 }
 
