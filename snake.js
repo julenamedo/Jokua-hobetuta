@@ -27,7 +27,7 @@ snake[0] =
     y : 10 * box //y ardatzean zein box-etan hasieratzen den
 };
 
-// JANARIA
+// sortu janaria
 //Hasierako sagarra zer posiziotan marraztuko den kalkulatzen du Math.random-ek
 let food = 
 {
@@ -42,7 +42,7 @@ let score = 0;
 let d; // d aldagai globala deklaratu.
 
 document.addEventListener("keydown",direction);
-
+//sigearen mugimenduak zehaztuko ditu
 function direction(event)
 {
     let key = event.keyCode;
@@ -64,7 +64,7 @@ function direction(event)
     }
 }
 
-// sugearen kolisioak
+// sugearen kolisioak detektatuko dituen funtzioa 
 function collision(head,array){
     for(let i = 0; i < array.length; i++){
         if(head.x == array[i].x && head.y == array[i].y){
@@ -111,7 +111,7 @@ function draw()
         food = 
         {
          x : Math.floor(Math.random()*17+1) * box, //Math.random-ek posizioa aleatorio bat kalkulatzen du ondorengo posiziotan. 17box eta 1box-aren artean. X ARDATZEAN
-            y : Math.floor(Math.random()*15+3) * box //""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" 15box eta 3box-aren artean. Y ARDATZEAN
+         y : Math.floor(Math.random()*15+3) * box //15box eta 3box-aren artean. Y ARDATZEAN
         }
         // sugearen isatsa ez da kentzen
     }
